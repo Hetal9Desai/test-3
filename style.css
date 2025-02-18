@@ -199,9 +199,9 @@ input[type="text"] {
   border: 1px solid #00000029;
   margin-bottom: 34px;
   overflow-x: auto;
-  display: flex; /* Ensure flex behavior */
-  flex-wrap: wrap; /* Allows wrapping of items */
-  justify-content: space-evenly; /* Distribute items evenly */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .best-value-section h1 {
@@ -229,14 +229,14 @@ input[type="text"] {
   width: 86.66%;
   border: 1px solid #f5ebeb;
   border-right: 1px solid #f5ebeb;
-  position: relative; /* Important to allow positioning of the arrow within this section */
+  position: relative;
 }
 
 .col-12 {
   width: 100%;
   border: 1px solid #f5ebeb;
   border-right: 1px solid #f5ebeb;
-  position: relative; /* Important to allow positioning of the arrow within this section */
+  position: relative;
 }
 
 .Twelev-columns {
@@ -284,20 +284,18 @@ input[type="text"] {
 }
 
 .product {
-  width: 13.5%; /* Each product takes about 13.5% of the width */
+  width: 13.5%;
   text-align: center;
   padding: 12px;
   flex: 0 0 auto;
   margin-right: 10px;
 }
-.product1{
-  
-    width: 11.5%;
-    text-align: center;
-    padding: 10px;
-    flex: 0 0 auto;
-    margin-right: 12px;
-  
+.product1 {
+  width: 11.5%;
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 auto;
+  margin-right: 12px;
 }
 
 .product img {
@@ -358,13 +356,13 @@ input[type="text"] {
 /* Style for the slider right arrow button */
 .slider-arrow-right {
   position: absolute;
-  top: 50%;  /* Vertically centers the arrow */
-  right: 0;  /* Positions it at the far right of the .col-8 */
-  transform: translateY(-50%);  /* Corrects the vertical alignment */
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   z-index: 10;
-  background-color: transparent;  /* Transparent background since we're using an image */
+  background-color: transparent;
   border: none;
-  border-radius: 50%;  /* Circular button */
+  border-radius: 50%;
   padding: 10px;
   cursor: pointer;
 }
@@ -383,9 +381,7 @@ input[type="text"] {
 
   .logo-search input[type="text"]::placeholder {
     font-size: 12px;
-    /* Smaller placeholder font size */
     color: #888;
-    /* Optional: Adjust color of the placeholder */
   }
 
   .login-more-cart {
@@ -419,13 +415,13 @@ input[type="text"] {
     flex-direction: row;
     justify-content: space-between;
   }
-  .Twelev-columns{
+  .Twelev-columns {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .product {
-    width: 32%; /* Three items per row */
+    width: 32%;
   }
 
   .product1 {
@@ -433,7 +429,7 @@ input[type="text"] {
   }
 
   .sidebar img {
-    display: none; /* Hide sidebar image on smaller screens */
+    display: none;
   }
 
   .title-section {
@@ -445,11 +441,9 @@ input[type="text"] {
 @media only screen and (max-width: 992px) {
   .logo-search {
     margin-left: 20px;
-
   }
 
   .logo-search form {
-
     gap: 9px;
   }
 
@@ -460,14 +454,12 @@ input[type="text"] {
   .logo-search input[type="text"]::placeholder {
     font-size: 11px;
     justify-content: space-between;
-    /* Smaller placeholder font size */
   }
 
   .login-more-cart {
     width: 240px;
   }
 
-  /* Trends Section */
   .trends {
     flex-direction: row;
     flex-wrap: wrap;
@@ -496,247 +488,222 @@ input[type="text"] {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .Twelev-columns{
+  .Twelev-columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
 
   .product {
-    width: 48%; /* Two items per row */
-  }
-
-  .product1 {
     width: 48%;
+
+    .product1 {
+      width: 48%;
+    }
+
+    .sidebar img {
+      display: none;
+    }
+
+    .title-section {
+      padding: 8px;
+    }
   }
 
-  .sidebar img {
-    display: none; /* Hide sidebar image */
+  /* Small screens */
+  @media only screen and (max-width: 768px) {
+    nav {
+      height: 105px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-search {
+      margin-left: 0;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .logo-search input[type="text"] {
+      width: 200px;
+    }
+
+    .logo-search input[type="text"]::placeholder {
+      font-size: 10px;
+    }
+
+    .login-more-cart {
+      width: 100%;
+      margin-top: 10px;
+      justify-content: space-evenly;
+    }
+
+    .login,
+    .more,
+    .cart {
+      font-size: 12px;
+    }
+
+    .trends {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    .trends div {
+      width: 48%;
+      margin-bottom: 15px;
+      padding: 12px 8px;
+      box-sizing: border-box;
+    }
+
+    .trends div:hover {
+      color: blue;
+    }
+
+    .best-value-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .seven-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .Twelev-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .product {
+      width: 45%;
+    }
+
+    .product1 {
+      width: 45%;
+    }
+
+    .sidebar img {
+      display: none;
+    }
+
+    .title-section {
+      padding: 7px;
+    }
   }
 
-  .title-section {
-    padding: 8px;
-  }
-  
-}
+  /* Extra small screens */
+  @media only screen and (max-width: 480px) {
+    nav {
+      height: auto;
 
-/* Small screens */
-@media only screen and (max-width: 768px) {
-  nav {
-    height: 105px;
-  }
+      padding: 10px;
+    }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+    }
 
-  .logo-search {
-    margin-left: 0;
-    justify-content: center;
-    width: 100%;
-  }
+    .logo-search {
+      margin-left: 0;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
 
-  .logo-search input[type="text"] {
-    width: 200px;
-  }
+    .logo-search input[type="text"] {
+      width: 160px;
+      margin-top: 5px;
+    }
 
-  .logo-search input[type="text"]::placeholder {
-    font-size: 10px;
-  }
+    .logo-search input[type="text"]::placeholder {
+      font-size: 9px;
+    }
 
-  .login-more-cart {
-    width: 100%;
-    margin-top: 10px;
-    justify-content: space-evenly;
-  }
+    .login-more-cart {
+      width: 100%;
+      margin-top: 10px;
+      justify-content: center;
+      flex-direction: column;
 
-  .login,
-  .more,
-  .cart {
-    font-size: 12px;
-  }
+      gap: 10px;
 
-  /* Trends Section */
-  .trends {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* Updated from 'space-evenly' */
-    padding: 10px 0;
-    width: 100%;
-  }
+      align-items: center;
+    }
 
-  .trends div {
-    width: 48%;
-    /* Adjusted width to ensure two items per row */
-    margin-bottom: 15px;
-    padding: 12px 8px;
-    box-sizing: border-box;
-    /* Ensures padding is included in width */
-  }
+    .login,
+    .more,
+    .cart {
+      font-size: 12px;
+      padding: 7px 21px;
+    }
 
-  .trends div:hover {
-    color: blue;
-  }
+    .trends {
+      flex-direction: column;
 
-  .best-value-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+      padding: 10px 0;
+    }
 
-  .seven-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .Twelev-columns{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    .trends div {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 12px 8px;
+    }
 
-  .product {
-    width: 45%; /* Two items per row */
-  }
+    .trends div:hover {
+      color: blue;
+    }
 
-  .product1 {
-    width: 45%;
-  }
+    .best-value-section {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0;
+    }
 
-  .sidebar img {
-    display: none; /* Hide sidebar image */
-  }
+    .best-value-section div {
+      width: 100%;
+      margin: 10px 0;
+    }
 
-  .title-section {
-    padding: 7px;
-  }
-}
+    .best-value-section img {
+      width: 20%;
+      height: auto;
+    }
+    .sidebar img {
+      display: none;
+    }
 
+    .best-value-section h3,
+    .best-value-section p {
+      text-align: center;
+    }
+    .seven-columns {
+      flex-direction: column;
+    }
+    .Twelev-columns {
+      flex-direction: column;
+    }
 
-
-/* Extra small screens */
-@media only screen and (max-width: 480px) {
-  nav {
-    height: auto;
-    /* Allow height to adjust based on content */
-    padding: 10px;
-    /* Optional: You can add padding for better spacing */
-  }
-
-  /* Stack the navigation items (logo, search, etc.) vertically */
-  nav ul {
-    flex-direction: column;
-    /* Stack items in a column */
-    align-items: center;
-    /* Center align the items */
-    justify-content: center;
-    /* Center align the items vertically */
-    height: auto;
-    /* Allow header to adjust height based on content */
-  }
-
-  /* Logo and search bar stacked vertically */
-  .logo-search {
-    margin-left: 0;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    /* Stack logo and search bar vertically */
-    align-items: center;
-    /* Center align logo and search bar */
-    gap: 10px;
-    /* Add space between logo and search bar */
-  }
-
-  .logo-search input[type="text"] {
-    width: 160px;
-    margin-top: 5px;
-    /* Add some margin to separate input field */
-  }
-
-  .logo-search input[type="text"]::placeholder {
-    font-size: 9px;
-    /* Smaller placeholder font size */
-  }
-
-  /* Login, More, and Cart buttons stacked vertically */
-  .login-more-cart {
-    width: 100%;
-    margin-top: 10px;
-    justify-content: center;
-    flex-direction: column;
-    /* Stack buttons vertically */
-    gap: 10px;
-    /* Add space between buttons */
-    align-items: center;
-    /* Center align buttons */
-  }
-
-  .login,
-  .more,
-  .cart {
-    font-size: 12px;
-    padding: 7px 21px;
-  }
-
-  /* Trends Section - Stack vertically on small screens */
-  .trends {
-    flex-direction: column;
-    /* Stack items vertically */
-    padding: 10px 0;
-  }
-
-  .trends div {
-    width: 100%;
-    /* Full-width for each item */
-    margin-bottom: 15px;
-    padding: 12px 8px;
-  }
-
-  .trends div:hover {
-    color: blue;
-  }
-
-  /* Best-Value Section - Stack vertically on small screens */
-  .best-value-section {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-  }
-
-  .best-value-section div {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .best-value-section img {
-    width: 20%;
-    height: auto;
-  }
-  .sidebar img{
-    display: none;
-  }
-
-  .best-value-section h3,
-  .best-value-section p {
-    text-align: center;
-  }
-  .seven-columns {
-    flex-direction: column; /* Stack all items vertically */
-  }
-  .Twelev-columns{
-    flex-direction: column;
-  }
-
-  .product {
-    width: 100%; /* 1 column */
-  }
-  .product1 {
-    width: 100%; /* 1 column */
+    .product {
+      width: 100%;
+    }
+    .product1 {
+      width: 100%;
+    }
   }
 }
