@@ -1,0 +1,736 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fff;
+}
+
+/* Navbar */
+nav {
+  background-color: #2874f0;
+  color: white;
+  height: 47px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  height: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  font-style: italic;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.logo small {
+  font-size: 10px;
+}
+
+.logo strong {
+  font-size: 18px;
+}
+
+/* Logo and Search bar together */
+.logo-search {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin-left: 172px;
+}
+
+.logo-search input[type="text"] {
+  width: 310px;
+  border: none;
+  outline: none;
+  background: white;
+  padding: 0px;
+}
+
+
+.plus-image {
+  vertical-align: middle;
+  margin-left: 5px;
+  height: 10px;
+}
+
+.logo-search .logo {
+  font-style: italic;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.logo-search form {
+  display: flex;
+  align-items: center;
+  background: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+form button {
+  background: white;
+  border: none;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+.login {
+  padding: 7px 41px;
+  font-family: sans-serif;
+  font-size: 15px;
+  background: #fffffffa;
+  font-weight: bold;
+  color: #2874f0;
+  border-radius: 2px;
+  box-shadow: 0.5px 0.5px 2px white;
+  cursor: pointer;
+}
+
+.more {
+  padding: 7px 16px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  background-image: url(./images/angle-down-solid.svg);
+  background-position: 84px 10px;
+  background-repeat: no-repeat;
+  transition: 0.69s;
+  background-size: 8px;
+  background-position-y: center;
+  background-position-x: right;
+  filter: invert(1);
+}
+
+.more:hover {
+  background-image: url(./images/angle-up-solid.svg);
+  transition: 0.69s;
+}
+
+.cart {
+  padding: 7px 27px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  background-image: url(./images/shopping-cart-solid.svg);
+  background-position: 84px 10px;
+  background-repeat: no-repeat;
+  transition: 0.69s;
+  background-size: 18px;
+  background-position-y: center;
+  background-position-x: left;
+  filter: invert(1);
+}
+
+.login-more-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 325px;
+}
+
+/* Trends Section */
+.trends {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  box-shadow: 2px 1px 6px #00000061;
+  padding: 0px 200px;
+  flex-wrap: wrap;
+}
+
+.img-box {
+  width: 64px;
+  cursor: pointer;
+  color: black;
+}
+
+.trends div {
+  padding: 12px 8px 12px 8px;
+  color: black;
+  font-family: sans-serif;
+  font-size: smaller;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.trends div:hover {
+  color: blue;
+}
+
+/* Best-Value Section */
+/* Best Value Section */
+.best-value-section {
+  padding: 6px;
+  margin: 15px 95px;
+  padding: 13px;
+  border: 1px solid #00000029;
+  margin-bottom: 34px;
+  overflow-x: auto;
+}
+
+.best-value-section h1 {
+  padding: 18px;
+  border: 1px solid #0000001c;
+  color: black;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+/* Main Layout */
+.container {
+  width: 100%;
+  box-shadow: 2px 5px 6px #00000061;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Main content (col-8) */
+.col-8 {
+  width: 86.66%;
+  border: 1px solid #f5ebeb;
+  border-right: 1px solid #f5ebeb;
+  position: relative; /* Important to allow positioning of the arrow within this section */
+}
+
+.col-12 {
+  width: 100%;
+  border: 1px solid #f5ebeb;
+  border-right: 1px solid #f5ebeb;
+  position: relative; /* Important to allow positioning of the arrow within this section */
+}
+
+.Twelev-columns {
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
+/* Sidebar (col-4) */
+.col-4 {
+  width: 13.33%;
+  margin-left: 10px;
+}
+
+/* Title Section */
+.title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #f5ebeb;
+}
+
+.view-all-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.view-all-button:hover {
+  background-color: #0056b3;
+}
+
+/* Seven columns (products) */
+.seven-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.product {
+  width: 13.5%; /* Each product takes about 13.5% of the width */
+  text-align: center;
+  padding: 12px;
+  flex: 0 0 auto;
+  margin-right: 10px;
+}
+.product1{
+  
+    width: 11.5%;
+    text-align: center;
+    padding: 10px;
+    flex: 0 0 auto;
+    margin-right: 12px;
+  
+}
+
+.product img {
+  width: 70%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.product1 img {
+  width: 70%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1rem;
+  color: black;
+}
+.product1 h3 {
+  font-size: 1rem;
+  color: black;
+}
+
+.product p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #00000082;
+  white-space: nowrap;
+  padding-top: 6px;
+}
+.product1 p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #00000082;
+  white-space: nowrap;
+  padding-top: 6px;
+}
+
+/* Sidebar */
+.sidebar img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 3px;
+  margin-top: 0px;
+  height: 413px;
+}
+
+/* Style for the slider right arrow button */
+.slider-arrow-right {
+  position: absolute;
+  top: 50%;  /* Vertically centers the arrow */
+  right: 0;  /* Positions it at the far right of the .col-8 */
+  transform: translateY(-50%);  /* Corrects the vertical alignment */
+  z-index: 10;
+  background-color: transparent;  /* Transparent background since we're using an image */
+  border: none;
+  border-radius: 50%;  /* Circular button */
+  padding: 5px;  /* Add some padding if necessary */
+}
+
+.right-arrow {
+ 
+  color: transparent; /* No text color needed */
+  border: none;
+  padding: 0; /* Remove padding */
+  cursor: pointer;
+  border-radius: 50%;  /* Circular button */
+ 
+}
+
+.right-arrow img {
+  width: 50px;  /* Adjust the image size to your preference */
+  height:50px;  /* Adjust the image size to your preference */
+  object-fit: contain;  /* Ensures the image fits inside the button */
+}
+
+.right-arrow:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Increase shadow intensity on hover */
+}
+
+/* Positioning and overflow for the products container */
+.seven-columns {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+
+
+/* Responsive Design */
+
+/* Large screens */
+@media only screen and (max-width: 1200px) {
+  .logo-search {
+    margin-left: 60px;
+  }
+
+  .logo-search input[type="text"] {
+    width: 220px;
+  }
+
+  .logo-search input[type="text"]::placeholder {
+    font-size: 12px;
+    /* Smaller placeholder font size */
+    color: #888;
+    /* Optional: Adjust color of the placeholder */
+  }
+
+  .login-more-cart {
+    width: 270px;
+  }
+
+  .trends {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+  .trends div {
+    width: calc(33.33% - 20px);
+    margin-bottom: 15px;
+  }
+
+  .trends div:hover {
+    color: blue;
+  }
+
+  /* Best-Value Section */
+  .best-value-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+  }
+
+  .best-value-section div {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+  }
+
+  .best-value-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .best-value-section h3,
+  .best-value-section p {
+    text-align: center;
+  }
+  .seven-columns {
+    flex-direction: row; /* Display all items in one row */
+  }
+
+  .product {
+    width: 100%; /* Each product takes up the full width */
+  }
+}
+
+/* Medium screens */
+@media only screen and (max-width: 992px) {
+  .logo-search {
+    margin-left: 20px;
+
+  }
+
+  .logo-search form {
+
+    gap: 9px;
+  }
+
+  .logo-search input[type="text"] {
+    width: 200px;
+  }
+
+  .logo-search input[type="text"]::placeholder {
+    font-size: 11px;
+    justify-content: space-between;
+    /* Smaller placeholder font size */
+  }
+
+  .login-more-cart {
+    width: 240px;
+  }
+
+  /* Trends Section */
+  .trends {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px 0;
+  }
+
+  .trends div {
+    width: calc(33.33% - 20px);
+    margin-bottom: 15px;
+  }
+
+  .trends div:hover {
+    color: blue;
+  }
+
+  .best-value-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    margin: 15px 95px;
+    margin-bottom: 34px;
+    overflow-x: auto;
+  }
+
+  .best-value-section div {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+  }
+
+  .best-value-section img {
+    width: 40%;
+    height: auto;
+  }
+
+  .best-value-section h3,
+  .best-value-section p {
+    text-align: center;
+  }
+  .seven-columns {
+    flex-direction: row; /* Display all items in a row */
+  }
+
+  .product {
+    width: calc(33.33% - 10px); /* 3 columns */
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 768px) {
+  nav {
+    height: 105px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-search {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo-search input[type="text"] {
+    width: 200px;
+  }
+
+  .logo-search input[type="text"]::placeholder {
+    font-size: 10px;
+  }
+
+  .login-more-cart {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+
+  .login,
+  .more,
+  .cart {
+    font-size: 12px;
+  }
+
+  /* Trends Section */
+  .trends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Updated from 'space-evenly' */
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .trends div {
+    width: 48%;
+    /* Adjusted width to ensure two items per row */
+    margin-bottom: 15px;
+    padding: 12px 8px;
+    box-sizing: border-box;
+    /* Ensures padding is included in width */
+  }
+
+  .trends div:hover {
+    color: blue;
+  }
+
+  /* Best-Value Section */
+  .best-value-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .best-value-section div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .best-value-section img {
+    width: 20%;
+    height: auto;
+  }
+
+  .best-value-section h3,
+  .best-value-section p {
+    text-align: center;
+  }
+  .seven-columns {
+    flex-direction: row; /* Display all items in a row */
+  }
+
+  .product {
+    width: calc(50% - 10px); /* 2 columns */
+  }
+}
+
+
+
+/* Extra small screens */
+@media only screen and (max-width: 480px) {
+  nav {
+    height: auto;
+    /* Allow height to adjust based on content */
+    padding: 10px;
+    /* Optional: You can add padding for better spacing */
+  }
+
+  /* Stack the navigation items (logo, search, etc.) vertically */
+  nav ul {
+    flex-direction: column;
+    /* Stack items in a column */
+    align-items: center;
+    /* Center align the items */
+    justify-content: center;
+    /* Center align the items vertically */
+    height: auto;
+    /* Allow header to adjust height based on content */
+  }
+
+  /* Logo and search bar stacked vertically */
+  .logo-search {
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    /* Stack logo and search bar vertically */
+    align-items: center;
+    /* Center align logo and search bar */
+    gap: 10px;
+    /* Add space between logo and search bar */
+  }
+
+  .logo-search input[type="text"] {
+    width: 160px;
+    margin-top: 5px;
+    /* Add some margin to separate input field */
+  }
+
+  .logo-search input[type="text"]::placeholder {
+    font-size: 9px;
+    /* Smaller placeholder font size */
+  }
+
+  /* Login, More, and Cart buttons stacked vertically */
+  .login-more-cart {
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Add space between buttons */
+    align-items: center;
+    /* Center align buttons */
+  }
+
+  .login,
+  .more,
+  .cart {
+    font-size: 12px;
+    padding: 7px 21px;
+  }
+
+  /* Trends Section - Stack vertically on small screens */
+  .trends {
+    flex-direction: column;
+    /* Stack items vertically */
+    padding: 10px 0;
+  }
+
+  .trends div {
+    width: 100%;
+    /* Full-width for each item */
+    margin-bottom: 15px;
+    padding: 12px 8px;
+  }
+
+  .trends div:hover {
+    color: blue;
+  }
+
+  /* Best-Value Section - Stack vertically on small screens */
+  .best-value-section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .best-value-section div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .best-value-section img {
+    width: 20%;
+    height: auto;
+  }
+
+  .best-value-section h3,
+  .best-value-section p {
+    text-align: center;
+  }
+  .seven-columns {
+    flex-direction: column; /* Stack all items vertically */
+  }
+
+  .product {
+    width: 100%; /* 1 column */
+  }
+}
